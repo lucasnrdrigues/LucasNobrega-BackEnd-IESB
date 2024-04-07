@@ -1,3 +1,9 @@
+//COMANDO INICIAIS PARA COMEÇAR UM PROJETO
+//npm init
+//npm install express
+//npm install nodemon
+//fazer script "start" para nodemon
+
 // Importanto módulo do express
 const express = require('express')
 
@@ -144,17 +150,6 @@ app.post("/notas", (req, res) => {
     res.json(resposta)
 
 })
-
-//npm init
-//npm install express
-//npm install nodemon
-//fazer script "start" para nodemon
-
-
-
-
-
-
 
 
 

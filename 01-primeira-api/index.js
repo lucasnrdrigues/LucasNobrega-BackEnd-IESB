@@ -51,7 +51,7 @@ app.get("/aluno", (req, res) => {
 
 //Depois de pessoa você irá me passar o parâmetro nome(coloque dois pontos antes do nomes)
 //Lá no PostMan no lugar do nome coloque "Lucas"
-//Para ele conseguir achar você tem que colocar exatamente igual aos parâmetros, ou seja, você tem q enviar "Lucas" e depois alguma idade!
+//Para ele conseguir achar você tem que colocar exatamente igual aos parâmetros, ou seja, você tem q enviar "Lucas" e depois alguma idade, não precisa usar os dois pontos no POstman!
 //Se o parâmetro fosse só ":nome", aí só precisaria do nome
 app.get("/pessoa/:nome/:idade", (req, res) => {
     console.log(req.params) //req.params nos permite acessar o nome que o usuário colocar, nesse caso irá devolver "Lucas"

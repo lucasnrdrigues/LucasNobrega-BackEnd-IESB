@@ -1,6 +1,6 @@
 //imports
 const express = require('express')
-require('dotenv').config() //importa sem precisar criar uma variável usando o método ".config()"
+require('dotenv').config() //importa sem precisar criar uma variável usando o método ".config()", stamos usando o dotenv para usarmos variáveis de ambiente para que não joguemos nossos usuário e senha no gitHub
 
 const mongoose = require('mongoose')
 

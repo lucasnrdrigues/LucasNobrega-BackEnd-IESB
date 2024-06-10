@@ -1,0 +1,681 @@
+{
+	"info": {
+		"_postman_id": "cfa0ac34-436a-4e03-9a17-50763a94021b",
+		"name": "Biblioteca-prova",
+		"description": "Requisições da api com funcionalidades para que uma biblioteca realize o gereciamento de seus livros.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33176069"
+	},
+	"item": [
+		{
+			"name": "livro",
+			"item": [
+				{
+					"name": "/livros",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/livros",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"livros"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/livros",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"titulo\" : \"Livro 1\",\r\n    \"autor\" : \"66665623d70057313d6a9395\",\r\n    \"genero\" : \"Genero 1\",\r\n    \"isbn\" : \"XXXXXXXXX\",\r\n    \"numeroPaginas\" : 50\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/livros",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"livros"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/livros/:id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/livros/66665939335dcc818f5a5cc9",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"livros",
+								"66665939335dcc818f5a5cc9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/livros",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"titulo\": \"Livro atualizado\",\r\n        \"autor\": \"6666572fd70057313d6a93a2\",\r\n        \"genero\": \"Genero atualizado\",\r\n        \"isbn\": \"XXXXXXXXX\",\r\n        \"numeroPaginas\": 50\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/livros/66665939335dcc818f5a5cc9",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"livros",
+								"66665939335dcc818f5a5cc9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/livros",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/livros/666658ce335dcc818f5a5cc7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"livros",
+								"666658ce335dcc818f5a5cc7"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "usuario",
+			"item": [
+				{
+					"name": "/usuarios",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/usuarios",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"usuarios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/usuarios/:id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/usuarios/6660c2fab1364542090ebf21",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"usuarios",
+								"6660c2fab1364542090ebf21"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/usuarios",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/usuarios/666660068cade187eca74ff6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"usuarios",
+								"666660068cade187eca74ff6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/usuarios",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Maria de Fátima Silva Nóbrega\",\r\n    \"email\": \"fatima@gmail.com2\",\r\n    \"senha\": \"fatima\",\r\n    \"telefone\": \"619xxxxxxxx\",\r\n    \"endereco\":\"QNM 10 conjunto X casa X\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/usuarios/666666bea51530fc588c331a",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"usuarios",
+								"666666bea51530fc588c331a"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "emprestimo",
+			"item": [
+				{
+					"name": "/emprestimos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/emprestimos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"emprestimos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/emprestimo/:id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/emprestimos/666669b2d057bb2d1c8b9f60",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"emprestimos",
+								"666669b2d057bb2d1c8b9f60"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/emprestimos",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"livro\": \"66665623d70057313d6a9395\",\r\n    \"usuario\": \"6660c2fab1364542090ebf21\",\r\n    \"dataEmprestimo\": \"2024-06-09\",\r\n    \"dataDevolucao\": \"2024-06-10\",\r\n    \"status\": \"atrasado\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/emprestimos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"emprestimos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/emprestimo",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/emprestimos/666669fad057bb2d1c8b9f64",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"emprestimos",
+								"666669fad057bb2d1c8b9f64"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/emprestimo",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"livro\": \"66665623d70057313d6a9395\",\r\n    \"usuario\": \"6660c2fab1364542090ebf21\",\r\n    \"dataEmprestimo\": \"2024-06-09\",\r\n    \"dataDevolucao\": \"2024-06-10\",\r\n    \"status\": \"em andamento\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/emprestimos/666669fad057bb2d1c8b9f64",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"emprestimos",
+								"666669fad057bb2d1c8b9f64"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "editora",
+			"item": [
+				{
+					"name": "/editoras",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/editoras",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"editoras"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/editoras/:id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/editoras/66666dd7194b9e01a606cb27",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"editoras",
+								"66666dd7194b9e01a606cb27"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/editoras",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\" : \"editora\",\r\n    \"endereco\" : \"endereco\",\r\n    \"email\" : \"email@gmail.com\",\r\n    \"telefone\" : \"619xxxxxxxx\",\r\n    \"cnpj\" : \"XXXXXXXXX\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/editoras",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"editoras"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/editoras",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/editoras/66666da7194b9e01a606cb22",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"editoras",
+								"66666da7194b9e01a606cb22"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/editoras",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\" : \"Editora\",\r\n    \"endereco\" : \"Endereco\",\r\n    \"email\" : \"email@gmail.com\",\r\n    \"telefone\" : \"619xxxxxxxx\",\r\n    \"cnpj\" : \"XXXXXXXXX\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/editoras/66666dd7194b9e01a606cb27",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"editoras",
+								"66666dd7194b9e01a606cb27"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "autor",
+			"item": [
+				{
+					"name": "/autores",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\":\"fulano\",\r\n    \"cpf\":\"xxxxx\",\r\n    \"dataNascimento\":\"2004-05-16\",\r\n    \"biografia\":\"testando testando\",\r\n    \"generosLiterarios\": [\"teste\", \"teste\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/autores",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"autores"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/autores",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/autores",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"autores"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/autores/:id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/autores/66665623d70057313d6a9395",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"autores",
+								"66665623d70057313d6a9395"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/autores/:id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/autores/66665623d70057313d6a9395",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"autores",
+								"66665623d70057313d6a9395"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/autores",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/autores/66665714d70057313d6a939d",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"autores",
+								"66665714d70057313d6a939d"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "autenticacao",
+			"item": [
+				{
+					"name": "/auth/registrar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"Lucas Nóbrega Rodrigues\",\r\n    \"email\": \"lucasnr1912@gmail.com\",\r\n    \"senha\": \"pimpoluk\",\r\n    \"telefone\": \"61985630155\",\r\n    \"endereco\":\"Borges Landeiro Garden\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/auth/registrar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"auth",
+								"registrar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/auth/login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"lucasnr1912@gmail.com\",\r\n    \"senha\": \"pimpoluk\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{TOKEN}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "TOKEN",
+			"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJub21lIjoiTHVjYXMgTsOzYnJlZ2EgUm9kcmlndWVzIiwiZW1haWwiOiJsdWNhc25yMTkxMkBnbWFpbC5jb20iLCJpYXQiOjE3MTc5ODY0NTUsImV4cCI6MTcxNzk4OTQ1NX0.Plk8xue0LSinBcu_6b8R1seRYEulBsBQ9SZqR4sFQmg",
+			"type": "string"
+		}
+	]
+}
